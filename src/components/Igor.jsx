@@ -6,7 +6,7 @@ function Igor() {
         <div>
             Это компонент Igor!
             Мой компонент работает
-            <bitton onClick={() => alert('Работает!')}>Сообщение</bitton>
+            <button onClick={() => alert('Работает!')}>Сообщение</button>
         </div>
     )
 }
