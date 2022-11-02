@@ -4,7 +4,8 @@ function Igor() {
 
     return (
         <div>
-            Это компонент Igor
+            Это компонент Igor!
+            Мой компонент работает
         </div>
     )
 }
