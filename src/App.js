@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React from "react";
+import 'antd/dist/antd.css';
 import {
   BrowserRouter as Router,
   Routes,
@@ -39,6 +40,7 @@ function App() {
               </li>
             </ul>
           </nav>
+          <Ksenia />
         </div>
         <div>
           <Routes>
