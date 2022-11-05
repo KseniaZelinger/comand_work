@@ -15,6 +15,7 @@ import Ksenia from './components/Ksenia'
 import Karina from './components/Karina'
 import Igor from './components/Igor'
 import Elena from './components/Elena'
+import Grant from './components/Grant'
 
 
 function App() {
@@ -43,6 +44,9 @@ function App() {
               <li>
                 <Link to="/elena">Elena</Link>
               </li>
+              <li>
+                <Link to="/grant">Grant</Link>
+              </li>
             </ul>
           </nav>
         </div>
@@ -55,7 +59,7 @@ function App() {
             <Route path="/karina" element={<Karina />} />
             <Route path="/igor" element={<Igor />} />
             <Route path="/elena" element={<Elena />} />
-
+            <Route path="/grant" element={<Grant />} />
           </Routes>
         </div>
       </Router>
