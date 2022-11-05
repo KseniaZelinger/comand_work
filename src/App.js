@@ -14,6 +14,8 @@ import Pavel from './components/Pavel'
 import Ksenia from './components/Ksenia'
 import Karina from './components/Karina'
 import Igor from './components/Igor'
+import Elena from './components/Elena'
+
 
 function App() {
   return (
@@ -38,9 +40,11 @@ function App() {
               <li>
                 <Link to="/igor">Igor</Link>
               </li>
+              <li>
+                <Link to="/elena">Elena</Link>
+              </li>
             </ul>
           </nav>
-          <Ksenia />
         </div>
         <div>
           <Routes>
@@ -50,6 +54,7 @@ function App() {
             <Route path="/ksenia" element={<Ksenia />} />
             <Route path="/karina" element={<Karina />} />
             <Route path="/igor" element={<Igor />} />
+            <Route path="/elena" element={<Elena />} />
 
           </Routes>
         </div>
