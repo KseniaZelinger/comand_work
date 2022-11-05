@@ -1,4 +1,5 @@
 import React from 'react';
+import ModalWindow from './igor-components/ModalWindow'
 
 function Igor() {
 
@@ -13,6 +14,9 @@ function Igor() {
             Это компонент Igor!
             Мой компонент работает
             <button onClick={() => info()}>Модальное окно</button>
+            <div>
+                <ModalWindow />
+            </div>
         </div>
     )
 }
