@@ -1,5 +1,6 @@
 import React from 'react';
-import ModalWindow from './igor-components/ModalWindow'
+import ModalWindow from './igor-components/ModalWindow';
+import Corusel from './igor-components/Corusel'
 
 function Igor() {
 
@@ -16,6 +17,9 @@ function Igor() {
             <button onClick={() => info()}>Модальное окно</button>
             <div>
                 <ModalWindow />
+            </div>
+            <div style={{ width: '500px', margin: '0 auto' }}>
+                <Corusel />
             </div>
         </div>
     )
