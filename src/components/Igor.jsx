@@ -1,6 +1,7 @@
 import React from 'react';
 import ModalWindow from './igor-components/ModalWindow';
 import Corusel from './igor-components/Corusel'
+import TableIgor from './igor-components/Table'
 
 function Igor() {
 
@@ -21,6 +22,10 @@ function Igor() {
             <div style={{ width: '500px', margin: '0 auto' }}>
                 <Corusel />
             </div>
+            <div style={{ width: '80%', margin: '0 auto' }}>
+                <TableIgor />
+            </div>
+
         </div>
     )
 }
