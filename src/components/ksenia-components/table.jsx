@@ -61,7 +61,7 @@ function TableKsenia() {
     ]
     return (
         <>
-            <Table dataSource={data} colums={colums} width={500} />
+            <Table dataSource={data} columns={colums} width={500} />
         </>
     )
 }
