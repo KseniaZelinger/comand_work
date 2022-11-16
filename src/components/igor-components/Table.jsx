@@ -1,29 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Table } from 'antd';
 
 function TableIgor() {
 
-    const data = [
-        {
-            name: "Игорь",
-            city: "Москва"
-        },
-        {
-            name: "Карина",
-            city: "Москва"
-        }
-    ]
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        fetch('https://newsapi.org/v2/top-headlines?country=ru&apiKey=17c40d0ec6344b36bfb501ec43586208')
+            .then(res => res.json())
+            .then(res => setData(res.articles))
+    }, [])
+
 
     const colums = [
         {
-            title: "Имя",
-            dataIndex: 'name',
+            title: "title",
+            dataIndex: 'title',
             key: 'name'
         },
         {
-            title: "Город",
-            dataIndex: 'city',
-            key: 'city'
+            title: "description",
+            dataIndex: 'description',
+            key: 'description'
         }
     ]
 
