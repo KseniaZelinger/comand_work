@@ -9,7 +9,7 @@ import {
   Link
 } from "react-router-dom";
 
-import Irina from './components/Irina'
+import Irina from'./components/Irina'
 import Pavel from './components/Pavel'
 import Ksenia from './components/Ksenia'
 import Karina from './components/Karina'
