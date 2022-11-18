@@ -30,7 +30,8 @@ function TableKsenia() {
         {
             title: "Ссылка на источник",
             dataIndex: 'url',
-            key: 'url'
+            key: 'url',
+            render: (url) => <a target="blanc" href={url}>Подробнее</a>
         },
         {
             title: "Картинка",
