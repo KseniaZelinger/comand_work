@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Table } from 'antd';
+import { Table, Tag, Alert } from 'antd';
 
 
 function TableKsenia() {
@@ -13,19 +13,22 @@ function TableKsenia() {
 
     const colums = [
         {
-            title: "title",
+            title: "Название",
             dataIndex: 'title',
-            key: 'name'
+            key: 'name',
+            render: name => <Alert description={name} type="success" />
         },
         {
-            title: "description",
+            title: "Описание",
             dataIndex: 'description',
-            key: 'description'
+            key: 'description',
+            render: description => <Alert description={description} type="info" />
         },
         {
-            title: "author",
+            title: "Автор",
             dataIndex: 'author',
-            key: 'author'
+            key: 'author',
+            render: author => <Tag color="green">{author}</Tag>
         },
         {
             title: "Ссылка на источник",
@@ -45,7 +48,7 @@ function TableKsenia() {
 
     return (
         <>
-            <Table dataSource={data} columns={colums} width={500} />
+            <Table dataSource={data} columns={colums} />
         </>
     )
 }
