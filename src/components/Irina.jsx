@@ -2,8 +2,6 @@ import { Button } from 'antd';
 import React from 'react';
 import TableIrina from './Irina_components/Table';
 
-import TableIrina from './Irina_components/Table';
-
 function Irina() {
 
     return (
