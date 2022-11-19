@@ -15,7 +15,7 @@ function Ksenia() {
             <Button type="link">Link Button</Button>
         </div>
 
-            <div style={{ width: '80%', margin: '0 auto' }}>
+            <div style={{ width: '90%', margin: '0 auto' }}>
                 <TableKsenia />
             </div></>
 
