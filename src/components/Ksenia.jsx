@@ -2,6 +2,7 @@ import { Button } from 'antd';
 import React from 'react';
 import { Table } from 'antd';
 import TableKsenia from './ksenia-components/table';
+import Select from './ksenia-components/Select'
 
 function Ksenia() {
 
@@ -17,7 +18,12 @@ function Ksenia() {
 
             <div style={{ width: '90%', margin: '0 auto' }}>
                 <TableKsenia />
-            </div></>
+            </div>
+            <div style={{ width: '90%', margin: '0 auto' }}>
+                <Select />
+            </div>
+
+        </>
 
     )
 }
