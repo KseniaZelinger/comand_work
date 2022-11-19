@@ -1,100 +1,71 @@
 import React from 'react';
 import { Table } from 'antd';
-import { Select } from 'antd';
 
 
 function TableIrina() {
-  const dataSource = [
-    {
-      brand: "ferrari",
-      country: "Italy",
-      price: "1500000"
+    const dataSource = [
+        {
+            brand: "ferrari",
+            country: "Italy",
+            price: "1500000"
 
-    },
-    {
-      brand: "mercedes benz",
-      country: "Italy",
-      price: "1500000"
-
-
-    },
-    {
-      brand: "ferrari",
-      country: "Italy",
-      price: "1500000"
+        },
+        {
+            brand: "mercedes benz",
+            country: "Italy",
+            price: "1500000"
 
 
-    },
-    {
-      brand: "ferrari",
-      country: "Italy",
-      price: "1500000"
+        },
+        {
+            brand: "ferrari",
+            country: "Italy",
+            price: "1500000"
 
 
-    },
-    {
-      brand: "ferrari",
-      country: "Italy",
-      price: "1500000"
+        },
+        {
+            brand: "ferrari",
+            country: "Italy",
+            price: "1500000"
 
 
-    }
-  ]
-
-  const columns = [
-    {
-      title: 'brand',
-      dataIndex: 'brand',
-      key: 'brand',
-    },
-
-    {
-      title: 'страна',
-      dataIndex: 'country',
-      key: 'country',
-    },
-
-    {
-      title: 'цена',
-      dataIndex: 'price',
-      key: 'price',
-    },
+        },
+        {
+            brand: "ferrari",
+            country: "Italy",
+            price: "1500000"
 
 
-  ]
+        }
+    ]
 
-  const handleChange = (value) => {
-    console.log(value); // { value: "lucy", key: "lucy", label: "Lucy (101)" }
-  };
+    const columns = [
+        {
+    title: 'brand',
+    dataIndex: 'brand',
+    key: 'brand',
+        },
 
+        {
+            title: 'страна',
+            dataIndex: 'country',
+            key: 'country',
+                },
 
-  return (
-    <>
-      <Table dataSource={dataSource} columns={columns} width={500} />
-      <Select
-        labelInValue
-        defaultValue={{
-          value: 'lucy',
-          label: 'Lucy (101)',
-        }}
-        style={{
-          width: 120,
-        }}
-        onChange={handleChange}
-        options={[
-          {
-            value: 'jack',
-            label: 'Jack (100)',
-          },
-          {
-            value: 'lucy',
-            label: 'Lucy (101)',
-          },
-        ]}
-      />
-    </>
-  )
-
+                {
+                    title: 'цена',
+                    dataIndex: 'price',
+                    key: 'price',
+                        },
+        
+       
+    ]
+    return (
+        <>
+            <Table dataSource={dataSource} columns={columns} width={500} />
+        </>
+    )
 }
 
 export default TableIrina;
