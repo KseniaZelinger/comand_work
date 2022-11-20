@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Table, Modal } from 'antd';
+import { EditOutlined } from '@ant-design/icons';
 
 function Table_for_edite() {
 
@@ -46,7 +47,7 @@ function Table_for_edite() {
             title: "Редактирование",
             dataIndex: 'id',
             key: 'id',
-            render: (id) => <span onClick={() => editeRaw(id)}>Редактировать</span> // В данной строке создаем вызов функции для установки промежуточного редактируемого объекта
+            render: (id) => <span onClick={() => editeRaw(id)}><EditOutlined /></span> // В данной строке создаем вызов функции для установки промежуточного редактируемого объекта
         }
     ]
 
